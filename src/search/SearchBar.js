@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View, TextInput } from 'react-native'
+import { StyleSheet, View, Text, TextInput } from 'react-native'
+
 
 export default class SearchBar extends Component {
     render() {
+        const { temp, keyDown, submit } = this.props;
         return (
             <View style={styles.wrapper}>
-                <TextInput style={styles.input} />
+                <TextInput style={styles.input} value={temp} onChangeText={keyDown} onSubmitEditing={submit} />
             </View>
         )
     }
@@ -15,7 +17,12 @@ const styles = StyleSheet.create({
     wrapper: {
         display: "flex",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
+        flexDirection: "row",
+        height: "50%"
+    },
+    icons: {
+        paddingLeft: 20
     },
     input: {
         height: 35,
