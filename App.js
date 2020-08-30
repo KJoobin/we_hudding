@@ -52,10 +52,10 @@ const tempData = [{
   "retweeted": false,
   "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
   "text": `[써치] 비무장지대,
-            아무도 본 적 없는 두려움과 마주하다!
-            밀리터리 스릴러 #써치
-            10월 COMING SOON
-            #장동윤 #정수정 #문정희 #윤박 #이현욱 #JANGDONGYOON #JUNGSOOJUNG… https://t.co/aKYWHLl8A3`,
+아무도 본 적 없는 두려움과 마주하다!
+밀리터리 스릴러 #써치
+10월 COMING SOON
+#장동윤 #정수정 #문정희 #윤박 #이현욱 #JANGDONGYOON #JUNGSOOJUNG… https://t.co/aKYWHLl8A3`,
   "truncated": true,
   "user": {
     "contributors_enabled": false,
