@@ -5,6 +5,9 @@ import {
     Text,
 } from 'react-native';
 
+import SearchBar from './SearchBar';
+import SearchTab from './SearchTab';
+
 export default class Search extends React.Component {
     constructor(props) {
         super(props)
@@ -13,7 +16,8 @@ export default class Search extends React.Component {
     render() {
         return (
             <View style={styles.wrapper}>
-                <Text>Search</Text>
+                <SearchBar />
+                <SearchTab />
             </View>
         )
     }
