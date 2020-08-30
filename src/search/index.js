@@ -1,16 +1,11 @@
 import React from 'react';
 import {
-    SafeAreaView,
     StyleSheet,
-    ScrollView,
     View,
     Text,
-    StatusBar,
 } from 'react-native';
 
-import { Colors } from 'react-native/Libraries/NewAppScreen';
-
-class Search extends React.Component {
+export default class Search extends React.Component {
     constructor(props) {
         super(props)
     }
@@ -32,5 +27,3 @@ const styles = StyleSheet.create({
         borderBottomColor: "rgba(125, 125, 125, 0.5)"
     }
 });
-
-export default Search;
