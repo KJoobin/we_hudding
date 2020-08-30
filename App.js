@@ -15,14 +15,16 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
-
 import { Colors } from 'react-native/Libraries/NewAppScreen';
+
+import Search from './src/search';
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
+        <Search />
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
