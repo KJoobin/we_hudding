@@ -7,21 +7,23 @@ export default class index extends Component {
     render() {
         const { data } = this.props;
         return (
-            <ScrollView
-                contentInsetAdjustmentBehavior="automatic"
-                style={styles.scrollView}>
+            <View style={styles.wrapper}>
+                <ScrollView style={styles.scrollView}>
 
-                {data.map((el) => {
-                    return <Twit key={el.id_str} data={el} />
-                })}
-            </ScrollView>
+                    {data.map((el) => {
+                        return <Twit key={el.id_str} data={el} />
+                    })}
+                </ScrollView>
+            </View>
         )
     }
 }
 
 const styles = StyleSheet.create({
+    wrapper: {
+        flex:1,
+    },
     scrollView: {
-        height: "100%",
         backgroundColor: "white",
     }
 });

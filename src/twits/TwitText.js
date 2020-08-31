@@ -6,16 +6,13 @@ import {
     Image
 } from 'react-native'
 
-import TwitDate from './TwitDate';
-import TwitText from './TwitText';
-export default class Twit extends Component {
+export default class TwitText extends Component {
     shouldComponentUpdate(props, nextProps) {
         return props !== nextProps;
     }
     render() {
         const { data } = this.props;
-        console.log(data.entities.hashtags);
-        console.log(data.text);
+        console.log(data.entities.hashtags)
 
         return (
             <View style={styles.wrapper}>
@@ -23,7 +20,7 @@ export default class Twit extends Component {
                     <View style={styles.avatarWrapper}>
                         <Image style={{ ...styles.avatar, backgroundColor: `#${data.user.profile_background_color}` }} source={{ uri: data.user.profile_image_url }} />
                     </View>
-                    <View style={styles.mainWrapper}>
+                    <View stly={styles.mainWrapper}>
                         <View style={styles.header}>
                             <Text style={styles.bold}> {data.user.name} </Text>
                             <Text style={styles.screenName}>@{data.user.screen_name}</Text>
@@ -45,6 +42,9 @@ const styles = StyleSheet.create({
         borderBottomColor: "rgba(125, 125, 125, 0.3)",
         paddingHorizontal: 5,
         paddingVertical: 3,
+        width:100,
+        backgroundColor:"black"
+
     },
     test: {
         flexDirection: "row",
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         borderRadius: 500
     },
     mainWrapper: {
-        flex:1,
+
     },
     header: {
         flexDirection: "row"
@@ -79,10 +79,12 @@ const styles = StyleSheet.create({
         color: "rgba(125,125,125,1)"
     },
     body: {
+        width: "100%",
         display: "flex",
         flexDirection:"row",
     },
-     wrap: {
-         flexWrap:"wrap"
-     }
+    wrap: {
+        flex:1,
+        flexWrap:"wrap"
+    }
 })

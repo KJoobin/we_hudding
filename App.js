@@ -123,7 +123,8 @@ const App = () => {
     (async () => {
       if (isLoading) {
         try {
-          const res = await fetch(`${env.API}?q=${temp}&result_type=popular&count=1`, {
+          console.log(temp);
+          const res = await fetch(`${env.API}?q=${temp}&result_type=popular`, {
             headers: {
               Authorization: `Bearer ${env.TOKEN}`
             }
@@ -132,7 +133,6 @@ const App = () => {
             throw new Error(res);
           }
           const results = await res.json();
-          console.log(results);
           setIsLoading(false);
           setData(results.statuses);
         } catch (error) {
@@ -145,13 +145,18 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+      <SafeAreaView style={styles.wrapper}>
         <Search temp={temp} keyDown={keyDown} submit={submit} />
-        <Twits data={tempData} />
-
+        <Twits data={data} />
       </SafeAreaView>
     </>
   );
 };
+
+const styles = StyleSheet.create({
+  wrapper: {
+    flex:1,
+  }
+})
 
 export default App;
