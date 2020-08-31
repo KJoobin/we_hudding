@@ -5,7 +5,7 @@ import {
 } from 'react-native'
 
 export default class TwitDate extends Component {
-    
+
     render() {
         const { created_at } = this.props;
         let date = ""
@@ -21,6 +21,16 @@ export default class TwitDate extends Component {
             const createdD = created.getDate();
             createdY !== today.getFullYear() && (date += `${createdY}년`);
             date += `${createdM}월 ${createdD}일`
+        } else {
+            const hours = 60 * 60 * 1000;
+            const minit = 60 * 1000;
+            if (passTime >= hours) {
+                const remainder = passTime % hours;
+                date += `${(passTime - remainder) / hours}시간 전`
+            } else {
+                const remainder = passTime % minit;
+                date += `${(passTime - remainder) / minit}분 전`
+            }
         }
 
         return <Text style={styles.date}>- {date}</Text>
