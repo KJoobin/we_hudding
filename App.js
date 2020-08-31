@@ -20,89 +20,109 @@ import Twits from './src/twits'
 
 import env from './env'
 
-const tempData = [{
-  "contributors": null,
-  "coordinates": null,
-  "created_at": "Sat Aug 29 14:30:00 +0000 2020",
-  "entities": {
-    "hashtags": [Array],
-    "symbols": [Array],
-    "urls": [Array],
-    "user_mentions": [Array]
-  },
-  "favorite_count": 1433,
-  "favorited": false,
-  "geo": null,
-  "id": 1299715933217239000,
-  "id_str": "1299715933217239041",
-  "in_reply_to_screen_name": null,
-  "in_reply_to_status_id": null,
-  "in_reply_to_status_id_str": null,
-  "in_reply_to_user_id": null,
-  "in_reply_to_user_id_str": null,
-  "is_quote_status": false,
-  "lang": "ko",
-  "metadata": {
-    "iso_language_code": "ko",
-    "result_type": "popular"
-  },
-  "place": null,
-  "possibly_sensitive": false,
-  "retweet_count": 1278,
-  "retweeted": false,
-  "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
-  "text": `[써치] 비무장지대,
-아무도 본 적 없는 두려움과 마주하다!
-밀리터리 스릴러 #써치
-10월 COMING SOON
-#장동윤 #정수정 #문정희 #윤박 #이현욱 #JANGDONGYOON #JUNGSOOJUNG… https://t.co/aKYWHLl8A3`,
-  "truncated": true,
-  "user": {
-    "contributors_enabled": false,
-    "created_at": "Tue Dec 14 07:56:11 +0000 2010",
-    "default_profile": false,
-    "default_profile_image": false,
-    "description": `🌟 토/일 밤 10:30 고수 허준호 #미씽 #0829첫방송
-                    🌟🌟 NEXT! 장동윤 정수정 #밀리터리스릴러 #써치`,
-    "entities": [Object],
-    "favourites_count": 1571,
-    "follow_request_sent": null,
-    "followers_count": 46369,
-    "following": null,
-    "friends_count": 1,
-    "geo_enabled": false,
-    "has_extended_profile": false,
-    "id": 226483444,
-    "id_str": "226483444",
-    "is_translation_enabled": false,
-    "is_translator": false,
-    "lang": null,
-    "listed_count": 242,
-    "location": "대한민국 서울",
-    "name": "OCN ORIGINAL",
-    "notifications": null,
-    "profile_background_color": "000000",
-    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme16/bg.gif",
-    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme16/bg.gif",
-    "profile_background_tile": false,
-    "profile_banner_url": "https://pbs.twimg.com/profile_banners/226483444/1597731076",
-    "profile_image_url": "http://pbs.twimg.com/profile_images/1234360771728965632/RQw40aYk_normal.jpg",
-    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1234360771728965632/RQw40aYk_normal.jpg",
-    "profile_link_color": "FAB81E",
-    "profile_sidebar_border_color": "FFFFFF",
-    "profile_sidebar_fill_color": "E8E8E8",
-    "profile_text_color": "333333",
-    "profile_use_background_image": false,
-    "protected": false,
-    "screen_name": "OCN_ORIGINAL",
-    "statuses_count": 15644,
-    "time_zone": null,
-    "translator_type": "none",
-    "url": null,
-    "utc_offset": null,
-    "verified": true
+const tempData = { 
+  "statuses": [{
+    "created_at": "Sun Aug 30 23:56:20 +0000 2020", 
+    "id": 1300220841733451800, 
+    "id_str": "1300220841733451777", 
+    "text": "They’re back!! Are you streaming from home too BTS on the 2020 MTV Video Music Awards broadcast?\n\nMore 📸 #MTV #VMAs… https://t.co/yLG3mnRCjA", 
+    "truncated": true, 
+    "entities": { 
+      "hashtags": [
+        { 
+          "text": "MTV", 
+          "indices": [105, 109] 
+        }, 
+        { 
+          "text": "VMAs", 
+          "indices": [110, 115] 
+        }
+      ], 
+      "symbols": [], 
+      "user_mentions": [], 
+      "urls": [{ 
+        "url": "https://t.co/yLG3mnRCjA", 
+        "expanded_url": "https://twitter.com/i/web/status/1300220841733451777", 
+        "display_url": "twitter.com/i/web/status/1…", 
+        "indices": [117, 140] 
+      }] 
+    }, 
+    "metadata": { 
+      "result_type": "popular", 
+      "iso_language_code": "en" 
+    }, 
+    "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>", 
+    "in_reply_to_status_id": null, 
+    "in_reply_to_status_id_str": null, 
+    "in_reply_to_user_id": null, 
+    "in_reply_to_user_id_str": null, 
+    "in_reply_to_screen_name": null, 
+    "user": { 
+      "id": 211286498, 
+      "id_str": "211286498", 
+      "name": "Getty Images Entertainment", 
+      "screen_name": "GettyVIP", 
+      "location": "Global", 
+      "description": "A view of entertainment and fashion events around the globe || For more of the world’s best images visit @GettyImages @GettyImagesNews @GettySport", 
+      "url": null, 
+      "entities": { "description": { "urls": [] } }, 
+      "protected": false, 
+      "followers_count": 23974, 
+      "friends_count": 1331, 
+      "listed_count": 324, 
+      "created_at": "Tue Nov 02 20:57:20 +0000 2010", 
+      "favourites_count": 640, 
+      "utc_offset": null, 
+      "time_zone": null, 
+      "geo_enabled": false, 
+      "verified": true, 
+      "statuses_count": 16017, 
+      "lang": null, 
+      "contributors_enabled": false, 
+      "is_translator": false, 
+      "is_translation_enabled": false, 
+      "profile_background_color": "000000", 
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+      "profile_background_tile": false, 
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1278427031403999235/3IGqJb8q_normal.jpg", 
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1278427031403999235/3IGqJb8q_normal.jpg", 
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/211286498/1583902578", 
+      "profile_link_color": "981CEB", 
+      "profile_sidebar_border_color": "FFFFFF", 
+      "profile_sidebar_fill_color": "E6E6E6", 
+      "profile_text_color": "494949", 
+      "profile_use_background_image": false, 
+      "has_extended_profile": false, 
+      "default_profile": false, 
+      "default_profile_image": false, 
+      "following": null, 
+      "follow_request_sent": null, 
+      "notifications": null, 
+      "translator_type": "none" }, 
+      "geo": null, 
+      "coordinates": null, 
+      "place": null, 
+      "contributors": null, 
+      "is_quote_status": false, 
+      "retweet_count": 5982, 
+      "favorite_count": 18170, 
+      "favorited": false, 
+      "retweeted": false, 
+      "possibly_sensitive": false, 
+      "lang": "en" 
+    }], 
+    "search_metadata": { 
+      "completed_in": 0.013, 
+      "max_id": 0, 
+      "max_id_str": "0", 
+      "next_results": "?max_id=1300220841733451776&q=Search&count=1&include_entities=1&result_type=popular", 
+      "query": "Search", 
+      "count": 1, 
+      "since_id": 0, 
+      "since_id_str": "0" 
+    } 
   }
-}]
 
 
 
@@ -123,7 +143,8 @@ const App = () => {
     (async () => {
       if (isLoading) {
         try {
-          const res = await fetch(`${env.API}?q=${temp}&result_type=popular&count=1`, {
+          console.log(temp);
+          const res = await fetch(`${env.API}?q=${temp}&result_type=popular`, {
             headers: {
               Authorization: `Bearer ${env.TOKEN}`
             }
@@ -132,7 +153,6 @@ const App = () => {
             throw new Error(res);
           }
           const results = await res.json();
-          console.log(results);
           setIsLoading(false);
           setData(results.statuses);
         } catch (error) {
@@ -145,13 +165,18 @@ const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+      <SafeAreaView style={styles.wrapper}>
         <Search temp={temp} keyDown={keyDown} submit={submit} />
-        <Twits data={tempData} />
-
+        <Twits data={data} />
       </SafeAreaView>
     </>
   );
 };
+
+const styles = StyleSheet.create({
+  wrapper: {
+    flex:1,
+  }
+})
 
 export default App;
