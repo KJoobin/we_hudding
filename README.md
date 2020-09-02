@@ -13,19 +13,19 @@
 
    ```
    - App
-   	- search
-   	- twits
+     - search
+     - twits
    	
-   	-App		//검색을 하여 결과값을 twits/ 에 넘긴다.
+   	- App        //검색을 하여 결과값을 twits/ 에 넘긴다.
    	
-   -search
-   	- searchBar //서치검색 바
-   	- searchTab	//검색 Type 탭
+   - search
+   	- searchBar  //서치검색 바
+   	- searchTab  //검색 Type 탭
    	
-   - twits				// 검색 결과를 노출되는 부분
-   	- Twit			// Twit 
-       - TwitDate	// Twit 의 created_at 의 폼을 변환
-       - TwitText	// Twit 의 text의 hash값을 찾아 변환
+   - twits        // 검색 결과를 노출되는 부분
+     - Twit       // Twit 
+       - TwitDate // Twit 의 created_at 의 폼을 변환
+       - TwitText // Twit 의 text의 hash값을 찾아 변환
    ```
 
 5. 좋았던점/ 어려웠던 점/ 아쉬운 점
