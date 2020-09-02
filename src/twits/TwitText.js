@@ -19,8 +19,8 @@ import {
 */
 
 export default class TwitText extends Component {
-    shouldComponentUpdate(props, nextProps) {
-        return props !== nextProps;
+    shouldComponentUpdate(nextProps) {
+        return this.props !== nextProps;
     }
     render() {
         const { text, hashtags } = this.props;

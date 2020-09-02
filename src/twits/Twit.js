@@ -9,8 +9,8 @@ import {
 import TwitDate from './TwitDate';
 import TwitText from './TwitText';
 export default class Twit extends Component {
-    shouldComponentUpdate(props, nextProps) {
-        return props !== nextProps;
+    shouldComponentUpdate(nextProps) {
+        return this.props !== nextProps;
     }
     render() {
         const { data } = this.props;
